@@ -19,6 +19,9 @@ class Bid < ActiveRecord::Base
     end
   end
 
+
+
+
   def highest_bid_amount
     return 0 unless item
     item.highest_bid_amount

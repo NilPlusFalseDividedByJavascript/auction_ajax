@@ -1,9 +1,10 @@
 class ItemsController < ApplicationController
   before_action :set_item, only: [:show, :edit, :update, :destroy]
-
+  
   # GET /items
   def index
     @items = Item.all
+
   end
 
   # GET /items/1
