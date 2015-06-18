@@ -17,3 +17,12 @@
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
+
+counter = 0
+
+function refreshBid(){
+  counter ++;
+  $("#highest-bid-container").html(counter);
+}
+setInterval(function(){refreshBid()}, 5000);
