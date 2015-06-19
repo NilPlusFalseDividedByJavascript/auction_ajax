@@ -17,3 +17,13 @@
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
+
+
+function loadlink(){
+  $.getScript('/items/3/refresh_bid');
+}
+
+setInterval(function(){
+    loadlink();
+ }, 15000);

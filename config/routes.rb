@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  resources :items
+  resources :items do
+    member do
+      get 'refresh_bid'
+    end
+  end
   resources :bids
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -7,6 +11,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'items#index'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

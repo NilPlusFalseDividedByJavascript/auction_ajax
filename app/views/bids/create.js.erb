@@ -1,2 +1,2 @@
-$("#highest-bid-container").html("<%= j(render partial: 'potato', locals: {item: @item}) %> ")
+$("#highest-bid-container").html("<%= j(render partial: '/bids/potato', locals: {item: @item}) %> ")
 $("#user-bid-container input").val(<%= @item.next_bid_amount %>)
